@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TestMovie</string>
+    <string name="error_api_connection">Error de conexion al obtener listado de peliculas</string>
+    <string name="error_connection">Error de conexion</string>
+    <string name="show_less">Mostrar menos</string>
+    <string name="show_more">Mostrar mas</string>
+    <string name="popular_movies">Popular Movies</string>
+    <string name="error_title">Error</string>
+    <string name="accept">Aceptar</string>
+    <string name="try_again">Volver a intentar</string>
+</resources>
