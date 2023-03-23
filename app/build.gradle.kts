@@ -27,6 +27,7 @@ android {
         val properties = Properties()
         properties.load(project.rootProject.file("local.properties").inputStream())
         buildConfigField("String", "API_KEY", "\"${properties.getProperty("API_KEY")}\"")
+        buildConfigField("String", "SECRET_KEY_APP_CENTER", "\"${properties.getProperty("SECRET_KEY_APP_CENTER")}\"")
     }
 
     buildTypes {
@@ -112,5 +113,9 @@ dependencies {
 
     testImplementation("io.mockk:mockk:1.13.4")
     androidTestImplementation("io.mockk:mockk-android:1.13.4")
+
+    val appCenterSdkVersion = "4.4.5"
+    implementation("com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}")
+    implementation("com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}")
 
 }

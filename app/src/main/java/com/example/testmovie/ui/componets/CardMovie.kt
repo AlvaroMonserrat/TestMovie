@@ -26,6 +26,7 @@ import com.example.testmovie.model.PopularMovie
 import com.example.testmovie.model.popularMovieDummy
 import com.example.testmovie.ui.theme.MidnightBlue
 import com.example.testmovie.ui.theme.TestMovieTheme
+import com.microsoft.appcenter.analytics.Analytics
 
 
 @Composable
@@ -66,6 +67,7 @@ fun CardMovie(popularMovie: PopularMovie){
                         color = MidnightBlue,
                         fontWeight = FontWeight.Light
                     )
+                    Analytics.trackEvent("Click ${popularMovie.id}")
                 }
             }
 
